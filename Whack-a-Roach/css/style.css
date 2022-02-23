@@ -1,0 +1,92 @@
+﻿body{
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-image:url('../images/ForestBG.jpg');
+background-color:#000000;
+background-attachment:fixed;	
+background-position:center center;
+background-size: cover; 
+}
+header {
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+height: 88px;
+font-family: 'Chango', cursive, Arial, sans-serif;
+font-weight:bold;
+background-color: lightgray;
+min-width:800px;
+height: 150px;
+box-shadow: 0px 10px 10px #888888;
+}
+h1{
+color: black;
+font-size:40px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:auto;
+padding:0px 0px 0px 0px;
+}
+.scoreboard{
+font-weight:bold;
+font-size:20px;
+margin-top:20px;
+width: 800px;
+min-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+.time{
+text-align:right;
+}
+#game{
+position:relative;
+border:1px solid black;
+margin-left:auto;
+margin-right:auto;
+padding:0px 0px 0px 0px;
+height: 400px;
+width: 800px;
+}
+/*An absolute position element is positioned relative to the first parent element that has a position other than static.*/
+#startbtn{
+position:absolute;
+left:337px;
+top:170px;
+}
+#startbtnE{
+position:absolute;
+left:210px;
+top:170px;
+}
+#startbtnH{
+position:absolute;
+left:480px;
+top:170px;
+}
+#instructions{
+position:absolute;
+left:100px;
+top:240px;
+font-family: Arial, sans-serif;
+font-weight:bold;
+width: 600px;
+background-color: white;
+margin:5px 5px 5px 5px;
+padding:5px 5px 5px 5px;
+cursor:url(images/mallet2.gif);
+}
+h6, footer{
+text-align:center;
+}
+#game2{
+	position:relative;
+	z-index:-1;
+}
+canvas{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+

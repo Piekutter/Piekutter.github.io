@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WHACK-A-ROACH</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Game Audio -->
+<!-- used when mouse over the difficulty buttons -->
+<audio id="buttono">
+		<source src="sounds/button_over.wav" />
+		<source src="sounds/button_over.ogg" />
+</audio>
+<!-- used when a difficulty button is selected -->
+<audio id="btnActive">
+		<source src="sounds/button_active.mp3" />
+		<source src="sounds/button_active.ogg" />
+</audio>
+<!-- used when hitting a mole in the head -->
+<audio id="ow">
+		<source src="sounds/Ow.mp3" />
+		<source src="sounds/Ow.ogg" />
+</audio>
+<!-- used when squishing a cockroach -->
+<audio id="squish">
+		<source src="sounds/squish.mp3" />
+		<source src="sounds/squish.ogg" />
+</audio>
+<!-- used when time has almost ran out -->
+<audio id="beep">
+		<source src="sounds/beep.mp3" />
+		<source src="sounds/beep.ogg" />
+</audio>
+<!-- used when mallet is hit down. (ie mouse click) -->
+<audio id="mallet">
+		<source src="sounds/mallet.mp3" />
+		<source src="sounds/mallet.ogg" />
+</audio>
+
+<header>
+ <h1>WHACK-A-ROACH<img src="images/TitleRoach2.png" alt="Bad Roach" height="108" width="112"></h1>
+</header>
+<audio controls autoplay loop>
+  <source src="music/Hustle.mp3">
+  <!-- MUSIC CREDIT: http://incompetech.com/music/royalty-free/most/downloaded.php
+  Hustle Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/-->
+Your browser does not support the audio element.
+</audio>
+<div class="scoreboard">
+	<table style="width:inherit;"><tr><td style="width:400px;">POINTS: <span id="points">0</span></td>
+		<td class="time" style="width:400px;">TIMER: <span id="timer"></td></tr>
+	</table>
+</div>
+<div id="game" style="cursor: url('images/mallet2.gif');">
+	<canvas id="myCanvas" width="800" height="400" style="border:1px solid green;">
+    	Sorry, your web browser does not support Canvas content.
+	</canvas>
+	<canvas id="myCanvas2" width="800" height="400"></canvas>
+	<button id="startbtn" type="button" onclick="medium()" onmouseover="buttonover()">Start Game Medium</button>
+	<button id="startbtnE" type="button" onclick="easy()" onmouseover="buttonover()">Start Game Easy</button>
+	<button id="startbtnH" type="button" onclick="hard()" onmouseover="buttonover()">Start Game Hard</button>
+	<!-- .remove to remove your element after the game starts. Look at the card game or .remove() display: none-->
+	
+	<p id="instructions">INSTRUCTIONS: You must kill the cockroaches by hitting them with the mallet. WIN the game by scoring 50 pts or more. 
+	Do NOT click on the moles or your score will be deducted by 5 points. 
+	Earn 2 points for every cockraoch killed.</p>
+</div>
+
+<footer>
+	<h6>This game was created by Lawrence Piekut. Uses JavaScript, a little bit of JQuery, HTML and CSS</h6>
+</footer>
+
+
+<!--Scripts for the game-->
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/whackaRoach.js"></script>
+</body>
+</html>
