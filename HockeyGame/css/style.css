@@ -1,0 +1,118 @@
+body{
+margin-left:auto;
+margin-right:auto;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-image:url('../images/bgfisheye.jpg');
+background-attachment:fixed;	
+background-position:center center;
+background-size: cover;
+font-family: arial, sans-serif;
+}
+h1{
+font-size:3em;
+text-align:center;
+}
+p{	background: white;
+	padding: 5px;}
+#playground{
+background: url(../images/IceRink.gif);
+width: 400px;
+height: 200px;
+position: relative;
+margin-left:auto;
+margin-right:auto;
+overflow: hidden;
+}
+#ball {
+background: #000;
+position: absolute;
+width: 20px;
+height: 20px;
+left: 150px;
+top: 100px;
+border-radius: 10px;
+}
+.paddle {
+background: #bbf url(../images/leafs.jpg);
+left: 50px;
+top: 70px;
+position: absolute;
+width: 30px;
+height: 70px;
+/*border: 2px solid red;*/
+}
+#paddleB {
+left: 320px;
+background: #bbf url(../images/habs.jpg);
+}
+#scoreboard {
+background: gray;
+border: 3px solid black;
+width: 380px;
+margin: 5px auto 20px;
+/*height: 150px;*/
+}
+.score{
+	float:left;
+	font-size:1.5em;
+	color: white;
+	margin: 8px;
+	padding:10px;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+}
+td{margin-left:auto;
+margin-right:auto;
+text-align:center;}
+#scoreA{
+	background: black;
+	border: 1px solid white;
+	font-size:1.5em;
+	color: red;
+	margin: 8px;
+	padding:10px;
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+}
+#scoreB{
+	background: black;
+	border: 1px solid white;
+	font-size:1.5em;
+	color: red;
+	margin: 8px;
+	padding:10px;
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+}
+#content{
+	font-style: arial, sans-serif;
+	font-size: 1.5em;
+	width: 450px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#puckRadar{
+	visibility:hidden;
+}
+#play_pause {
+	font-size: 1.4em;
+	position:relative;
+	margin: 30px auto 3px;
+	text-align: center;
+	display:block;
+}
+#winner{
+	position:relative;
+	z-index:1;
+	top:45px;
+	font-size:3em;
+	text-align:center;
+	font-weight:bold;
+}
+footer {
+	text-align:center;
+}

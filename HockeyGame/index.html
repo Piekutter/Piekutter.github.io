@@ -1,0 +1,49 @@
+<!-- Lawrence Piekut 
+Date: 2014 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Good Ol Hockey Game</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Good Ol Hockey Game</h1>
+</header>
+<div id="scoreboard">
+	<table><tr><td><div class="score">Leafs</div></td><td><div class="score">Habs</div></td></tr>
+		<tr><td><div id="scoreA">0</div></td><td><div id="scoreB">0</div></td></tr>
+	</table>
+</div>
+<div id="game">
+	<div id="playground">
+		<div id="winner"></div>
+		<div id="paddleA" class="paddle"></div>
+		<div id="paddleB" class="paddle"></div>
+		<div id="ball"></div>
+	</div>
+</div>
+<audio id="pucksound">
+	<source src="sounds/pucksound.mp3"/>
+</audio>
+<audio id="goodOld">
+	<source src="sounds/Stompin_Tom_Connors-Good_Old_Hockey_Game.mp3"/>
+</audio>
+<div id="content">
+	<!--Saves:  -->
+	<input id="play_pause" type="button" value="PLAY" onclick="play_pause()">
+	<p><span id="saves"></span>Welcome to the best game in the world. <br/><label><input type="radio" name="type" value="2P" checked>2 Player</label><label><input type="radio" name="type" value="CPU">CPU</label>
+	<br/>To play the game player 1 (LEAFS) moves the goalie up by pressing "Q" and down by pressing "A".
+	 </p><p id="player2Desc">Player 2 (HABS) moves up pressing "P" and down by pressing "L".</p> 
+	 <p>First team to score 5 Wins. May the best team win!</p>
+	<p id="puckRadar">Puck Speed : <span id="puckSpeed"> 5 </span></p>
+</div>
+<footer>
+	<h6>Lawrence Piekut. Centennial College.</h6>
+</footer>
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/html5games.hockey.js"></script>
+
+</body>
+</html>
